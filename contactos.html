@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Administrador</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+		
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				B.T.P Informatica <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="img\perfiladmin.jpeg" alt="UserIcon">
+					<figcaption class="text-center text-titles">Jose Adalberto Mendoza Trujillo</figcaption>
+				</figure>
+				<ul class="full-box list-unstyled text-center">
+					<li>
+						<a href="#!">
+							<i class="zmdi zmdi-settings"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#!" class="btn-exit-system">
+							<i class="zmdi zmdi-power"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="administrador.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Inicio
+					</a>
+				</li>
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-case zmdi-hc-fw"></i> Administracion <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="sobreMi.html"><i class="zmdi"></i> Sobre Mi</a>
+						</li>
+						<li>
+							<a href="servicios.html"><i class="zmdi"></i> Servicios</a>
+						</li>
+						<li>
+							<a href="noticias.html"><i class="zmdi"></i> Noticias</a>
+						</li>
+						<li>
+							<a href="contactos.html"><i class="zmdi"></i>Contactos</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Usuario <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="admin.html"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administrador</a>
+						</li>
+						<li>
+							<a href="teacher.html"><i class="zmdi zmdi-male-alt zmdi-hc-fw"></i> Docente</a>
+						</li>
+						<li>
+							<a href="student.html"><i class="zmdi zmdi-face zmdi-hc-fw"></i> Estudiante</a>
+						</li>
+						<li>
+							<a href="representative.html"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Representante</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-card zmdi-hc-fw"></i> Pagos <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="registration.html"><i class="zmdi zmdi-money-box zmdi-hc-fw"></i> Registro</a>
+						</li>
+						<li>
+							<a href="payments.html"><i class="zmdi zmdi-money zmdi-hc-fw"></i> Pagos</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-shield-security zmdi-hc-fw"></i> Configuracion Escuela <i class="zmdi zmdi-caret-down pull-right"></i>
+					</a>
+					<ul class="list-unstyled full-box">
+						<li>
+							<a href="school.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i> Datos Escolares</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="full-box dashboard-contentPage" style="background-image: url(img/fondoescuela.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+				<li class="pull-left">
+					<a href="#!" class="btn-menu-dashboard"><i class="zmdi zmdi-more-vert"></i></a>
+				</li>
+				<li>
+					<a href="#!" class="btn-Notifications-area">
+						<i class="zmdi zmdi-notifications-none"></i>
+						<span class="badge">7</span>
+					</a>
+				</li>
+				<li>
+					<a href="#!" class="btn-search">
+						<i class="zmdi zmdi-search"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#!" class="btn-modal-help">
+						<i class="zmdi zmdi-help-outline"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="page-header">
+			  <h1 class="text-titles" style="color: black;"><i class="zmdi"></i>Formulario De Usuario</h1>
+			</div>
+			<p class="lead" style="color: black;">Al final hay un boton con el cual te puedes registrar</p>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<ul style="background-color: black;  padding: 10px;">
+					  	<center><a style="text-decoration: none; color: blanchedalmond;">Acontinuacion Empezemos con la Presentacion del Proyecto</a></center>
+					</ul>
+
+
+				<div class="container mt-5">
+        <form> 
+            <div class="row">
+                <div class="col-md-6  mb-3">
+                    <label class="form-label" for="input_name" style="color: black;">Nombre:</label>
+                    <input style="color: black;" type="text" id="input_name" class="form-control">
+                </div>
+                <div class="col-md-6  mb-3">
+                    <label class="form-label" for="input_lastname" style="color: black;">Apellido:</label>
+                    <input style="color: black;" type="text" id="input_lastname" class="form-control">
+                </div>
+            </div>
+            
+            <label class="form-label" for="input_email" style="color: black;">Email:</label>
+            <div class="input-group mb-3">    
+                <span class="input-group-text" style="color: black;">@</span>
+                <input style="color: black;" type="email" id="input_email" class="form-control">                
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label class="form-label" for="telefono" style="color: black;">Teléfono:</label>
+                    <input style="color: black;" type="tel" id="telefono" class="form-control">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label" for="pais" style="color: black;">País:</label>
+                    <input style="color: black;" type="text" id="pais" class="form-control" list="paises">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label" for="ciudad" style="color: black;">Ciudad:</label>
+                    <select id="ciudad" class="form-select mb-3">
+                      <option value="madrid" style="color: black;">Tegucigalpa</option>
+                      <option value="barcelona" style="color: black;">Choluteca</option>
+                      <option value="valencia" style="color: black;">San Pedro Sula</option>
+                      <option value="sevilla" style="color: black;">Juticalpa</option>
+                      <option value="sevilla" style="color: black;">Comayagua</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label" for="fecha" style="color: black;">Fecha de nacimiento:</label>
+                    <input style="color: black;" type="date" id="fecha" class="form-control">                    
+                </div>                
+            </div>
+
+            <div class="row">                
+                <div class="col-md-4 mb-3">
+                    <label class="form-label" for="color" style="color: black;">Color de identificación:</label>
+                    <input style="color: black;" type="color" id="color" class="form-control form-control-color">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label" for="conocimientos" style="color: black;">Nivel de conocimientos:</label>
+                    <input style="color: black;" type="range" id="conocimientos" class="form-range" min="1" max="10">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="form-label" for="foto" style="color: black;">Foto de perfil:</label>
+                    <input style="color: black;" type="file" id="foto" class="form-control">
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4 offset-md-4 mb-3">
+                    <label for="intereses" style="color: black;">Intereses:</label><br>
+                    <div class="form-check form-check-inline">
+                      <input style="color: black;" type="checkbox" id="tecnologia" value="tecnologia" class="form-check-input">
+                      <label for="tecnologia" class="form-check-label" style="color: black;">Tecnología</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input style="color: black;" type="checkbox" id="negocios" value="negocios" class="form-check-input">
+                      <label for="negocios" class="form-check-label" style="color: black;">Negocios</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input style="color: black;" type="checkbox" id="arte" value="arte" class="form-check-input">
+                      <label for="arte" class="form-check-label" style="color: black;">Arte</label>
+                    </div>
+                </div>
+            </div>
+            
+            <label class="form-label" for="comentarios" style="color: black;">Comentarios adicionales:</label>
+            <textarea style="color: black;" id="comentarios" class="form-control mb-3" rows="4" cols="30"></textarea>
+      
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg" style="color: white; background-color: blue;">Enviar</button>
+                <button type="reset" class="btn btn-lg" style="color: white; background-color: red;">Cancelar</button>
+            </div>
+
+          </form>
+
+    </div>
+										   <p class="text-center"><a href="registrarUsuario.html">
+										    	<input type="button" value="REGISTRARSE" class="btn btn-raised" style="background-color: darkslategray; color: blanchedalmond;"></input>
+										    	</a>
+										    </p>
+										    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: black;
+    }
+    footer{
+        background: #343434;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width:190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style-type:none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: '';
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 100%;
+        width: 0;
+        height: 2px;
+
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #f18930;
+    }
+    .social-icons i:hover{
+        color: #f18930;
+    }
+    .bottom-bar{
+        background: black;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: white;
+        margin: 0;
+        font-size: 16px;
+        padding: 7px;
+    }
+</style>
+<body>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>COntactenos</h3>
+                <p>Email:Info@example.com</p>
+                <p>Telefono:+504 9835-6382</p>
+                <p>Direccion:Su Direccion Calle 123</p>
+            </div>
+            <div class="footer-content">
+                <h3>Enlaces Rapidos</h3>
+                 <ul class="list">
+                    <li><a href="administrador.html">Inicio</a></li>
+                    <li><a href="sobreMi.html">Sobre Mi</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Siganos</h3>
+                <ul class="social-icons">
+                 <i class="bi bi-facebook"></i>
+                 <i class="bi bi-messenger"></i>
+                 <i class="bi bi-whatsapp"></i>
+                 <i class="bi bi-twitter-x"></i>
+                 <i class="bi bi-instagram"></i>
+                 <i class="bi bi-tiktok"></i>
+                 <i class="bi bi-youtube"></i>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Todos lo derechos reservados</p>
+        </div>
+    </footer>
+</body>
+									    </form>
+									</div>
+								</div>
+							</div>
+						</div>
+	</section>
+
+	<section class="full-box Notifications-area">
+		<div class="full-box Notifications-bg btn-Notifications-area"></div>
+		<div class="full-box Notifications-body">
+			<div class="Notifications-body-title text-titles text-center">
+				Notificationes <i class="zmdi zmdi-close btn-Notifications-area"></i>
+			</div>
+			<div class="list-group">
+			  	<div class="list-group-item">
+				    <div class="row-action-primary">
+				      	<i class="zmdi zmdi-alert-triangle"></i>
+				    </div>
+				    <div class="row-content">
+				      	<div class="least-content">17m</div>
+				      	<h4 class="list-group-item-heading">Titulo con una etiqueta</h4>
+				      	<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+				    </div>
+			  	</div>
+			  	<div class="list-group-separator"></div>
+			  	<div class="list-group-item">
+				    <div class="row-action-primary">
+				      	<i class="zmdi zmdi-alert-octagon"></i>
+				    </div>
+				    <div class="row-content">
+				      	<div class="least-content">15m</div>
+				      	<h4 class="list-group-item-heading">Titulo con una etiqueta</h4>
+				      	<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+				    </div>
+			  	</div>
+			  	<div class="list-group-separator"></div>
+				<div class="list-group-item">
+				    <div class="row-action-primary">
+				      	<i class="zmdi zmdi-help"></i>
+				    </div>
+				    <div class="row-content">
+				      	<div class="least-content">10m</div>
+				      	<h4 class="list-group-item-heading">Titulo con una etiqueta</h4>
+				      	<p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+				    </div>
+				</div>
+			  	<div class="list-group-separator"></div>
+			  	<div class="list-group-item">
+				    <div class="row-action-primary">
+				      	<i class="zmdi zmdi-info"></i>
+				    </div>
+				    <div class="row-content">
+				      	<div class="least-content">8m</div>
+				      	<h4 class="list-group-item-heading">Titulo con una etiqueta</h4>
+				      	<p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+				    </div>
+			  	</div>
+			</div>
+
+		</div>
+	</section>
+
+	<div class="modal fade" tabindex="-1" role="dialog" id="Dialog-Help">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			    	<h4 class="modal-title">Ayuda</h4>
+			    </div>
+			    <div class="modal-body">
+			        <p>
+			        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt beatae esse velit ipsa sunt incidunt aut voluptas, nihil reiciendis maiores eaque hic vitae saepe voluptatibus. Ratione veritatis a unde autem!
+			        </p>
+			    </div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-primary btn-raised" data-dismiss="modal"><i class="zmdi zmdi-thumb-up"></i> Ok</button>
+		      	</div>
+		    </div>
+	  	</div>
+	</div>
+
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
